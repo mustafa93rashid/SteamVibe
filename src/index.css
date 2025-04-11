@@ -1,0 +1,158 @@
+/* Google Fonts: Manrope*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+/* Start Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --red45: #E50000;
+  --red50: #FF0000;
+  --red55: #FF1A1A;
+  --red60: #FF3333;
+  --red80: #FF9999;
+  --red90: #FFCCCC;
+  --red95: #FFE5E5;
+  --red99: #FFFAFA;
+
+  --black06: #0F0F0F;
+  --black08: #141414;
+  --black10: #1A1A1A;
+  --black12: #1F1F1F;
+  --black15: #262626;
+  --black20: #333333;
+  --black25: #404040;
+  --black30: #4D4D4D;
+
+  --grey60: #999999;
+  --grey65: #A6A6A6;
+  --grey70: #B3B3B3;
+  --grey75: #BFBFBF;
+  --grey90: #E4E4E7;
+  --grey95: #F1F1F3;
+  --grey97: #F7F7F8;
+  --grey99: #FCFCFD;
+}
+
+.px-161 {
+  padding-left: 8.38541667%;
+  padding-right: 8.38541667%;
+}
+
+.pb-150 {
+  padding-bottom: 7.84%;
+}
+
+.mb-80 {
+  margin-bottom: 5.0253%;
+}
+
+
+/* font size */
+
+.fs-18 {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-20 {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+}
+
+.fs-22 {
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-24 {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-38 {
+  font-size: 38px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.fs-58 {
+  font-size: 58px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+
+/* font weight */
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.fw-700{
+  font-weight: 700;
+}
+
+/*Start Responsive*/
+@media (max-width: 1919px) {
+
+  .px-161 {
+    padding-left: 5.625%;
+    padding-right: 5.625%;
+  }
+  
+  .pb-150 {
+    padding-bottom: 8.33333333%;
+  }
+  
+  .mb-80 {
+    margin-bottom: 5.0253%;
+  }
+}
+
+@media (max-width: 992px) {
+  .px-161 {
+      padding-left: 7.459677419354839%;
+      padding-right: 7.459677419354839%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pb-150 {
+    padding-bottom: 20.5128205%;
+  }
+
+  .px-162 {
+    padding-left: 4.1025641%;
+    padding-right: 4.1025641%;
+  }
+
+  .mb-80 {
+    margin-bottom: 10.2564103%;
+  }
+
+}
