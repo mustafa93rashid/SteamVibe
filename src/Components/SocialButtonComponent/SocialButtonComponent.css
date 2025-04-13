@@ -1,0 +1,27 @@
+.AA-social-btn{
+    display: flex;
+    gap: 14px;
+}
+
+.AA-footer-btn{
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--black15);
+    background-color: var(--black10);
+}
+
+@media (max-width: 1919px) {
+    .AA-social-btn{
+        gap: 10px;
+    }
+    
+    .AA-footer-btn{
+        padding: 11px;
+    }
+
+    .AA-footer-btn img{
+        height: 20px;
+        width: 20px;
+    }
+}
+

@@ -1,6 +1,7 @@
 footer{
     background-color: var(--black06);
 }
+
 .footerTopPart{
     display: flex;
     justify-content: center;
@@ -17,12 +18,18 @@ footer{
 
 .footerTopPart h5{
     color: var(--white-color);
+    padding-bottom: 24px;
+    margin-bottom: 0px;
 }
 
 .footerTopPart ul{
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+}
+
+.footerTopPart ul li{
+    padding-bottom: 14px;
 }
 
 .footerTopPart ul li a{
@@ -34,15 +41,94 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-wrap: wrap;
     border-top: 1px solid var(--black15);
     padding-top: 24px;
+    padding-bottom: 50px;
+}
+
+.footerBottomPart ul{
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .footerBottomPart span{
     color: var(--grey60);
 }
 
+.footerBottomPart .privacy-part{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    margin-left: 0;
+}
+
 .footerBottomPart a{
     color: var(--grey60);
     text-decoration: none;
+}
+
+@media (max-width: 1919px) {
+    .footerTopPart{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .footerTopPart h5{
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .footerTopPart ul li{
+        padding-bottom: 10px;
+    }
+
+    .footerTopPart ul li a{
+        font-size: 16px;
+    }
+
+    .footerBottomPart{
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .footerBottomPart span,
+    .footerBottomPart a{
+       font-size: 14px;
+    }
+    
+    .footerBottomPart .privacy-part{
+        gap: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .AA-col{
+        flex: 1 1 30% ;
+    }
+    
+    .footerTopPart{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footerTopPart h5{
+        padding-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .footerTopPart ul li{
+        padding-bottom: 8px;
+    }
+
+    .footerTopPart ul li a{
+        font-size: 14px;
+    }
+
+    .footerBottomPart{
+        padding-bottom: 20px;
+        justify-content: start;
+        gap: 20px;
+    }
 }

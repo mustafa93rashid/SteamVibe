@@ -1,92 +1,98 @@
 import React from "react";
 import "./FooterComponent.css";
+import SocialButtonComponent from "../SocialButtonComponent/SocialButtonComponent"
+import faceIcon from './../../assets/images/Footer/facebook.png'
+import twitterIcon from './../../assets/images/Footer/twitter.png'
+import linkdenIcon from './../../assets/images/Footer/linkedin.png'
 import { Link } from "react-router-dom";
 
 export default function FooterComponent() {
+
+    const socialIcons = [
+        { src: faceIcon, alt: 'Facebook Link' },
+        { src: twitterIcon, alt: 'Twitter Link' },
+        { src: linkdenIcon, alt: 'LinkedIn Link' },
+    ];
+
   return (
     <footer className="px-161">
       <div className="footerTopPart">
         <div className="AA-col">
-          <h5 className="fs-20">Home</h5>
+          <h5 className="fs-20 fw-600">Home</h5>
+          <ul>
+            {
+                ["Categories", "Devices","Pricing","FAQ"].map((field) => (
+                    <li key={field}>
+                        <Link to={""} className="fs-18 fw-500">{field}</Link>
+                    </li>
+                ))
+            }
+          </ul>
+        </div>
+        <div className="AA-col">
+          <h5 className="fs-20 fw-600">Movies</h5>
+          <ul>
+            {
+                ["Gernes", "Trending","New Release","Popular"].map((field) => (
+                    <li key={field}>
+                        <Link to={""} className="fs-18 fw-500">{field}</Link>
+                    </li>
+                ))
+            }
+          </ul>
+        </div>
+        <div className="AA-col">
+          <h5 className="fs-20  fw-600">Shows</h5>
+          <ul>
+            {
+                ["Gernes", "Trending","New Release","Popular"].map((field) => (
+                    <li key={field}>
+                        <Link to={""} className="fs-18 fw-500">{field}</Link>
+                    </li>
+                ))
+            }
+          </ul>
+        </div>
+        <div className="AA-col">
+          <h5 className="fs-20 fw-600">Support</h5>
           <ul>
             <li>
-              <Link to={""}>Categories</Link>
-            </li>
-            <li>
-              <Link to={""}>Devices</Link>
-            </li>
-            <li>
-              <Link to={""}>Pricing</Link>
-            </li>
-            <li>
-              <Link to={""}>FAQ</Link>
+              <Link to={""} className="fs-18 fw-500">Contact Us</Link>
             </li>
           </ul>
         </div>
         <div className="AA-col">
-          <h5 className="fs-20">Movies</h5>
+          <h5 className="fs-20 fw-600">Subscription</h5>
           <ul>
-            <li>
-              <Link to={""}>Gernes</Link>
-            </li>
-            <li>
-              <Link to={""}>Trending</Link>
-            </li>
-            <li>
-              <Link to={""}>New Release</Link>
-            </li>
-            <li>
-              <Link to={""}>Popular</Link>
-            </li>
+            {
+                ["Plans", "Features"].map((field) => (
+                    <li key={field}>
+                        <Link to={""} className="fs-18 fw-500">{field}</Link>
+                    </li>
+                ))
+            }
           </ul>
         </div>
         <div className="AA-col">
-          <h5 className="fs-20">Shows</h5>
-          <ul>
-            <li>
-              <Link to={""}>Gernes</Link>
-            </li>
-            <li>
-              <Link to={""}>Trending</Link>
-            </li>
-            <li>
-              <Link to={""}>New Release</Link>
-            </li>
-            <li>
-              <Link to={""}>Popular</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="AA-col">
-          <h5 className="fs-20">Support</h5>
-          <ul>
-            <li>
-              <Link to={""}>Contact Us</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="AA-col">
-          <h5 className="fs-20">Subscription</h5>
-          <ul>
-            <li>
-              <Link to={""}>Plans</Link>
-            </li>
-            <li>
-              <Link to={""}>Features</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="AA-col">
-          <h5 className="fs-20">Connect With Us</h5>
+          <h5 className="fs-20 fw-600">Connect With Us</h5>
+            <SocialButtonComponent icons={socialIcons} />
         </div>
       </div>
       <div className="footerBottomPart">
-        <span> @2023 streamvib, All Rights Reserved </span>
-        <div>
-          <Link to={""}> Terms of Use </Link>
-          <Link to={""}> | Privacy Policy </Link>
-          <Link to={""}> | Cookie Policy </Link>
-        </div>
+        <span className="fs-18 fw-400"> @2023 streamvib, All Rights Reserved </span>
+        <ul className="privacy-part">
+            <li>
+                <Link to={""} className="fs-18 fw-400"> Terms of Use </Link>
+            </li>
+            <li> | </li>
+            <li>
+                <Link to={""} className="fs-18 fw-400">  Privacy Policy </Link> 
+            </li>
+            <li> | </li>
+            <li>
+                <Link to={""} className="fs-18 fw-400">  Cookie Policy </Link>
+            </li>
+          </ul>
       </div>
     </footer>
   );
