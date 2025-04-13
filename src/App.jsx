@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Support from "./Pages/Support/Support";
 import Subscriptions from "./Pages/Subscriptions/Subscriptions";
 import MoviesShows from "./Pages/MoviesShows/moviesShows";
+import FooterComponent from './Components/FooterComponent/FooterComponent';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<MoviesShows />} />
         <Route path="/Subscriptions" element={<Subscriptions />} />
       </Routes>
+      <FooterComponent />
     </div>
   );
 }
