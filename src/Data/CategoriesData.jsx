@@ -55,6 +55,41 @@ export const CategoriesData = [
     img2: horror2,
     img3: horror3,
     img4: horror4
+  },
+  {
+    categoryName: "Adventure",
+    img1: adventure1,
+    img2: adventure2,
+    img3: adventure3,
+    img4: adventure4
+  },
+  {
+    categoryName: "Comedy",
+    img1: comedy1,
+    img2: comedy2,
+    img3: comedy3,
+    img4: comedy4
+  },
+  {
+    categoryName: "Drama",
+    img1: drama1,
+    img2: drama2,
+    img3: drama3,
+    img4: drama4
+  },
+  {
+    categoryName: "Horror",
+    img1: horror1,
+    img2: horror2,
+    img3: horror3,
+    img4: horror4
+  },
+  {
+    categoryName: "Action",
+    img1: action1,
+    img2: action2,
+    img3: action3,
+    img4: action4
   }
 ];
 

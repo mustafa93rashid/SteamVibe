@@ -1,0 +1,151 @@
+.AA-categories{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.AA-title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pagination-container {
+    background-color: var( --black06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid var(--black12);
+    border-radius: 8px;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .pagination li {
+    display: inline-block;
+    background-color: var(--black20);
+  }
+  
+  .pagination a {
+    display: block;
+    padding: 2px 8.15px;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 100px;
+  } 
+
+    .pagination .previous{
+        margin-right: 16px ;
+    }
+
+    .pagination .next{
+        margin-left: 16px ;
+    }
+
+  .pagination .previous,
+  .pagination .next {
+    background-color: var(--black10);
+  }
+  
+  .pagination .previous a,
+  .pagination .next a {
+    background-color: var(--black10);
+    padding: 14px;
+    border: 1px solid var(--black12);
+    border-radius: 8px;
+
+  }
+
+  .pagination .previous.disabled,
+  .pagination .next.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination .active {
+    background-color: var(--red45); /* Red for active page */
+    padding: 0px 3.35px;
+  }
+  
+  .pagination .break {
+    color: var(--black10);
+    background-color: transparent;
+    cursor: default;
+  }
+
+/* Progress Bar */
+.progress-bar-scroll {
+    margin-top: 24px;
+    width: 22.06%;
+    height: 5px;
+    background-color: var(--black20) !important;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none !important;
+}
+  
+.progress-indicator {
+    height: 100%;
+    background-color: var(--red45);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+  @media (max-width: 1919px) {
+    .AA-categories{
+        gap: 20px;
+    }
+
+    .pagination-container {
+        padding: 12px;
+      }
+
+    .pagination .previous a,
+    .pagination .next a {
+        padding: 10px;
+    }
+
+    .pagination .previous{
+        margin-right: 12px ;
+    }
+
+    .pagination .next{
+        margin-left: 12px ;
+    }
+
+    .icon-page{
+        width: 24px;
+        height: 24px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .AA-categories{
+        overflow-y: hidden; 
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .AA-categories::-webkit-scrollbar {
+        display: none;
+      }
+    .pagination-container{
+        display: none;
+    }
+    .progress-bar-scroll{
+        display: block !important;
+    }
+  }
+
