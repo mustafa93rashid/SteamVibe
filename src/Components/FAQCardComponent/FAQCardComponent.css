@@ -1,0 +1,102 @@
+.AA-FAQ-full{
+    display: flex;
+    flex-direction: column;
+}
+
+.AA-FAQ-card{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.AA-line{
+    height: 1px;
+    background: linear-gradient(90deg, rgba(229, 0, 0, 0) 0%, #E50000 16.67%, rgba(229, 0, 0, 0) 100%);
+}
+
+.AA-FAQ-num{
+    background-color: var(--black12);
+    border: 1px solid var(--black15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.AA-FAQ-num span{
+    color: var(--white-color);
+}
+
+.AA-FAQ-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AA-FAQ-content h4{
+    color: var(--white-color);
+}
+
+.AA-FAQ-content p{
+    color: var(--grey60);
+}
+
+@media (max-width: 1919px) {
+    .AA-FAQ-card{
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .AA-FAQ-num{
+        padding: 16px;
+        border-radius: 8px;
+    }
+    
+    .AA-FAQ-num span{
+        font-size: 16px;
+    }
+
+    .AA-icons img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .AA-FAQ-content{
+        gap: 16px;
+    }
+
+    .AA-FAQ-content h4{
+        font-size: 20px;
+    }
+    
+    .AA-FAQ-content p{
+        font-size: 16px;
+    }
+}
+  
+@media (max-width: 992px) {
+    .AA-FAQ-full{
+        gap: 20px;
+    }
+
+    .AA-FAQ-card{
+        gap: 9.5px;
+        padding: 10px;
+    }
+
+    .AA-FAQ-num{
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .AA-FAQ-content{
+        gap: 12px;
+    }
+
+    .AA-FAQ-content h4{
+        font-size: 18px;
+    }
+    
+    .AA-FAQ-content p{
+        font-size: 14px;
+    }
+}

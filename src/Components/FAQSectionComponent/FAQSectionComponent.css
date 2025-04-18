@@ -13,14 +13,30 @@
   border-radius: 8px;
 }
 
+.AA-FAQs{
+  display: flex;
+  justify-content: space-between;
+  gap: 80px
+}
+
+.AA-FAQ-group{
+  flex: 1 1 50%;
+}
+
 @media (max-width: 1919px) {
   .AA-ask-btn{
     font-size: 14px;
     padding: 14px 20px;
     border-radius: 6px;
   }
+
+  .AA-FAQs{
+    gap: 40px
+  }
 }
 
 @media (max-width: 992px) {
-
+  .AA-FAQs{
+    flex-wrap: wrap;
+  }
 }
