@@ -1,11 +1,10 @@
 import "./FAQSectionComponent.css";
 import { FAQData } from "../../Data/FAQData";
 import TitleComponent from "../TitleComponent/TitleComponent";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import FAQCardComponent from "./../FAQCardComponent/FAQCardComponent";
 
 export default function FAQSectionComponent() {
-  const currentData = FAQData;
 
   // State to track the current screen size
   let [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 992); // Adjust breakpoint as needed
