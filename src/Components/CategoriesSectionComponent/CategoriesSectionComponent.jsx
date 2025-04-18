@@ -1,14 +1,14 @@
-import "./CategoriesComponent.css";
+import "./CategoriesSectionComponent.css";
 import { CategoriesData } from "../../Data/CategoriesData";
-import TitleComponent from "../../Components/TitleComponent/TitleComponent";
-import CategoryCardComponent from "../../Components/CategoryCardComponent/CategoryCardComponent";
+import TitleComponent from "../TitleComponent/TitleComponent";
+import CategoryCardComponent from "../CategoryCardComponent/CategoryCardComponent";
 import React, { useState , useRef, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import left from './../../assets/images/Categories/arrow-left.png'
 import right from './../../assets/images/Categories/arrow-right.png'
 
 
-export default function CategoriesComponent() {
+export default function CategoriesSectionComponent() {
   const [currentPage, setCurrentPage] = useState(0);
   const [progress, setProgress] = useState(100); // Progress value (0-100)
 

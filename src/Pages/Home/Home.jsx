@@ -1,8 +1,8 @@
 import React from 'react'
-import CategoriesComponent from '../../Components/CategoriesComponent/CategoriesComponent'
+import CategoriesSectionComponent from '../../Components/CategoriesSectionComponent/CategoriesSectionComponent'
 
 export default function Home() {
   return (
-    <CategoriesComponent />
+    <CategoriesSectionComponent />
   )
 }
