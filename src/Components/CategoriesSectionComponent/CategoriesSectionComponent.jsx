@@ -2,29 +2,26 @@ import "./CategoriesSectionComponent.css";
 import { CategoriesData } from "../../Data/CategoriesData";
 import TitleComponent from "../TitleComponent/TitleComponent";
 import CategoryCardComponent from "../CategoryCardComponent/CategoryCardComponent";
-import React, { useState , useRef, useEffect } from 'react';
-import ReactPaginate from 'react-paginate';
-import left from './../../assets/images/Categories/arrow-left.png'
-import right from './../../assets/images/Categories/arrow-right.png'
-
+import React, { useState, useRef, useEffect } from "react";
+import ReactPaginate from "react-paginate";
+import left from "./../../assets/images/Categories/arrow-left.png";
+import right from "./../../assets/images/Categories/arrow-right.png";
 
 export default function CategoriesSectionComponent() {
   const [currentPage, setCurrentPage] = useState(0);
-  const [progress, setProgress] = useState(100); // Progress value (0-100)
+  const [progress, setProgress] = useState(100); 
 
-  // Function to simulate progress change
   const handleProgressChange = (value) => {
     setProgress(value);
   };
-  // Function to handle page change
+
   const handlePageChange = ({ selected }) => {
     setCurrentPage(selected);
   };
 
-  const startIndex = currentPage * 5; 
+  const startIndex = currentPage * 5;
   const endIndex = startIndex + 5;
   const currentData = CategoriesData.slice(startIndex, endIndex);
-
 
   const scrollContainerRef = useRef(null); // Reference to the scrolling container
   const [scrollPercentage, setScrollPercentage] = useState(0); // Track scroll percentage
@@ -42,18 +39,18 @@ export default function CategoriesSectionComponent() {
     }
   };
 
-// Attach scroll event listener
-useEffect(() => {
-  if (scrollContainerRef.current) {
-    scrollContainerRef.current.addEventListener('scroll', handleScroll);
-    return () => {
-      scrollContainerRef.current?.removeEventListener('scroll', handleScroll);
-    };
-  }
-}, []);
+  // Attach scroll event listener
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.addEventListener("scroll", handleScroll);
+      return () => {
+        scrollContainerRef.current?.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []);
 
   return (
-    <div className="px-161 pb-150">
+    <section className="px-161 pb-150">
       <div className="AA-title-section mb-80">
         <TitleComponent
           title={"Explore our wide variety of categories"}
@@ -80,24 +77,25 @@ useEffect(() => {
             breakClassName="break"
             breakLinkClassName="break-link"
             pageLabelBuilder={(pageNumber) => {
-              return ``         
+              return ``;
             }}
           />
         </div>
       </div>
-      
-       
+
       <div className="AA-categories" ref={scrollContainerRef}>
         {currentData.map((item, key) => (
           <CategoryCardComponent data={item} />
         ))}
       </div>
-          <div className="center">
-            <div className="progress-bar-scroll">
-              <div className="progress-indicator" style={{ width: `${scrollPercentage}%` }}></div>
-            </div>
-          </div>
-      
-    </div>
+      <div className="center">
+        <div className="progress-bar-scroll">
+          <div
+            className="progress-indicator"
+            style={{ width: `${scrollPercentage}%` }}
+          ></div>
+        </div>
+      </div>
+    </section>
   );
 }

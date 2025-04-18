@@ -15,7 +15,7 @@ export default function FAQSectionComponent() {
   }, []);
   
   return (
-    <div className="px-161 pb-150">
+    <section className="px-161 pb-150">
       <div className="AA-title-section mb-80">
         <TitleComponent
           title={"Frequently Asked Questions"}
@@ -37,6 +37,6 @@ export default function FAQSectionComponent() {
         </div>
       ))}
       </div>
-    </div>
+    </section>
   );
 }
