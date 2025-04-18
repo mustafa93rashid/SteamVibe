@@ -1,0 +1,17 @@
+.AA-free-trial{
+    border: 1px solid var(--black15);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    padding: 80px;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 992px) {
+    .AA-free-trial{
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
