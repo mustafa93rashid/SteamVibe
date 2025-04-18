@@ -15,7 +15,9 @@ export default function FAQSectionComponent() {
             "Got questions? We've got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe."
           }
         />
-
+        <button className="AA-ask-btn fs-18 fw-600">
+          Ask a Question
+        </button>
       </div>
     </div>
   );

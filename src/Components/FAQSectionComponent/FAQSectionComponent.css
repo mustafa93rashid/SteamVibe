@@ -1,0 +1,26 @@
+.AA-title-section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.AA-ask-btn{
+  background-color: var(--red45);
+  color: var(--white-color);
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 1919px) {
+  .AA-ask-btn{
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+
+}
