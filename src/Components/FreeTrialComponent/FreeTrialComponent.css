@@ -1,4 +1,9 @@
 .AA-free-trial {
+    position: absolute; /* Position the overlay absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--black15);
     display: flex;
     justify-content: space-between;
@@ -17,6 +22,34 @@
     border-radius: 8px;
 }
 
+
+.slider-container {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    height: 16.30%;
+    max-height: 313px;
+    width: 100%;
+    background-color: #000; /* Dark background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 12px;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 20px; /* Space between images */
+    transition: transform 0.5s ease; /* Smooth animation */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .slider-image {
+    width: auto;
+    height: 100%; /* Stretch images to full height */
+    object-fit: contain; /* Maintain aspect ratio */
+  }  
+
 @media (max-width: 1919px) {
     .AA-free-trial{
         padding: 80px 60px;
@@ -30,11 +63,21 @@
         font-size: 16px;
     }
 
-    ..AA-free-btn{
+    .AA-free-btn{
         font-size: 14px;
         padding: 14px 20px;
         border-radius: 8px;
     }
+
+    .slider-container {
+        gap: 5px;
+        height: 16.388%;
+        max-height: 236px ;
+      }
+      
+      .slider {
+        gap: 10px; /* Space between images */
+      }
 }
 
 @media (max-width: 992px) {
@@ -54,4 +97,15 @@
     .AA-free-trial .MR-title {
         font-size: 24px;
     }
+
+    .slider-container {
+        gap: 5px;
+        height: 88.21%;
+        max-height: 344px;
+    }
+      
+    .slider {
+        gap: 10px; /* Space between images */
+    }
 }
+
